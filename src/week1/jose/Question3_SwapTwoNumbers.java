@@ -2,7 +2,7 @@ package week1.jose;
 
 public class Question3_SwapTwoNumbers {
 
-    // Swap two int variables' values without using a third variable
+    //  Swap two int variables' values without using a third variable
 
     public static void swapTwoNumbers( int num1, int num2 ){
 
