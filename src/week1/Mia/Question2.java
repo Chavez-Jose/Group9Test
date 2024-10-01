@@ -2,6 +2,7 @@ package week1.Mia;
 
 public class Question2 {
 
+
     public static void main(String[] args) {
         Finra(30);  // Call the function with 30 as the argument.
     }
@@ -19,9 +20,8 @@ public class Question2 {
 
                 //
 
-
             }
         }
     }
-
 }
+
