@@ -1,4 +1,4 @@
-package week1.Jose;
+package week1.jose;
 
 public class Question1 {
 
