@@ -1,5 +1,8 @@
 package week1.kate;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class T04_FrequencyOfChars {
 
     //Write a return method that can find the frequency of characters
@@ -26,9 +29,32 @@ public class T04_FrequencyOfChars {
 
     }
 
+    public static void frequencyOfCharacter(String str){
+
+        Map<Character, Integer> counter = new LinkedHashMap<>(); // key - each char and the value - is the frequency
+
+        for(int i = 0; i < str.length(); i++){
+            char eachChar = str.charAt(i);
+
+            if(!counter.containsKey(eachChar)){
+                counter.put(eachChar, 0);
+            }
+
+            counter.put(eachChar, counter.get(eachChar) + 1);
+
+        }
+
+        System.out.println(counter);
+
+    }
+
+
+
+
     public static void main(String[] args) {
-        String input = "AAABBCDD";
-        System.out.println(frequencyOfChars(input));
+        String input = "ksjdhkkjhkjhljhjjjjjjjjj";
+        frequencyOfCharacter("jhkjhkjhjkjhjk");
+
     }
 
 }
