@@ -2,10 +2,10 @@ package week1.kate;
 
 public class T05_RemoveDuplicates {
 
-    public static String removeDupes(String str){
+    public static String removeDupes(String str) {
         String result = "";
-        for (int i = 0; i < str.length(); i++){
-            if (result.indexOf(str.charAt(i)) == -1){ // If the character is not already in the result
+        for (int i = 0; i < str.length(); i++) {
+            if (result.indexOf(str.charAt(i)) == -1) { // If the character is not already in the result
                 result += str.charAt(i);
             }
         }
@@ -23,9 +23,24 @@ public class T05_RemoveDuplicates {
         return result.toString();
     }
 
+    public static String removeDuplicates(String duplicates) {
+
+        String list = "";
+
+        for (int i = 0; i < duplicates.length(); i++) {
+            if (!list.contains("" + duplicates.charAt(i))) {
+                list += duplicates.charAt(i);
+
+            }
+        }
+        return list;
+
+    }
+
     public static void main(String[] args) {
         System.out.println("removeDupes(\"AAAAABBBBCCC\") = " + removeDupes("AAAAABBBBCCC"));
-        System.out.println(removeDupBuilder("AAAAABBBBCCC"));
+        System.out.println(removeDupBuilder("AAAAABBBBCCC888"));
+        System.out.println(removeDuplicates("lhruyeiuyiouyoiuypiiiioiuop9999e8rw"));
     }
 }
 /*
