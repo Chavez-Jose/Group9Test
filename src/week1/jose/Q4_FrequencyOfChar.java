@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Q4_FrequencyOfChar {
 
-    public static void frequencyOfChars(String string){
+    public static void frequencyOfChars1(String string){
 
 
         // Create a map to store unique character frequencies
@@ -33,7 +33,7 @@ public class Q4_FrequencyOfChar {
 
     public static void main(String[] args) {
 
-       frequencyOfChars("333333ggggguuuuwsertyyyyyyyyyyyYYIIi");
+       frequencyOfChars1("333333ggggguuuuwsertyyyyyyyyyyyYYIIi");
     }
 
 }
