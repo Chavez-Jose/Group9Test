@@ -8,10 +8,10 @@ public class Q4_FrequencyOfChar {
     public static void frequencyOfChars1(String string){
 
 
-        // Create a map to store unique character frequencies
+        // Create a map to store unique character frequencies ( Multiple Timelines... where these Ch's are!!)
         Map<Character, Integer> charFrequency = new LinkedHashMap<>();
 
-        // Create a loop to count the frequency of each character
+        // Create a loop to count the frequency of each character ( In a given Timeline)
         for (char ch : string.toCharArray()) {
 
         // If key value in map does not exist, create first occurence in map
